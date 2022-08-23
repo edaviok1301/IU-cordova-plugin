@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-iu-amlibrary",
+  "version": "4.7.1",
+  "description": "IU Amlibrary",
+  "cordova": {
+    "id": "cordova-plugin-iu-amlibrary",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Vinay Rao & Nikhil Waghaye",
+  "license": "MIT"
+}
