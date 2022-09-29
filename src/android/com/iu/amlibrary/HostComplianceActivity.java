@@ -2,7 +2,7 @@ package com.iu.amlibrary;
 
 import android.os.Bundle;
 
-import com.entel.movil.R;
+import amazonia.iu.com.R;
 import amazonia.iu.com.amlibrary.activities.DRComplianceActivity;
 
 
