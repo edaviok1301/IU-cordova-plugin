@@ -31,6 +31,11 @@
 		  <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 		  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 		  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+		  <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+		  <queries>
+        		<package android:name="QUERY_ALL_PACKAGES" />
+    		  </queries>
 
 	    </config-file>
 
