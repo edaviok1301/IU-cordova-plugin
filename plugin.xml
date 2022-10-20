@@ -48,7 +48,7 @@
 	    <resource-file src="src/android/drconfig.json" target="assets/drconfig.json" />
 	    <resource-file src="src/android/libs/amlibrary-prod-release.aar"
 	        target="libs/amlibrary-prod-release.aar" />
-        	<resource-file src="src/android/activity_host_compliance.xml" target="res/layout/activity_host_compliance.xml" />
+        <resource-file src="src/android/activity_host_compliance.xml" target="res/layout/activity_host_compliance.xml" />
 
 	    <source-file src="src/android/com/iu/amlibrary/amlibrary.java"
 	        target-dir="src/com/iu/amlibrary" />
