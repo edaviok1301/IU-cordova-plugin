@@ -28,6 +28,7 @@ public class amlibrary extends CordovaPlugin {
     Log.d("AMLib", "Plugin Init launch");
     IUApp.launch(this.cordova.getActivity());
     IUApp.init(this.cordova.getActivity().getApplication(), HostComplianceActivity.class);
+    
   }
 
   public amlibrary() {
