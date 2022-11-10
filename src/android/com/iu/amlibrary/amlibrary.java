@@ -11,6 +11,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
+import java.util.concurrent.TimeUnit;
+
 import amazonia.iu.com.amlibrary.client.IUApp;
 
 
@@ -24,10 +26,11 @@ public class amlibrary extends CordovaPlugin {
   private static final String ADDITIONAL_DATA = "ADDITIONAL_DATA";
 
   @Override
-  protected void pluginInitialize() {
+  protected void pluginInitialize() throws InterruptedException {
     Log.d("AMLib", "Plugin Init launch");
-    IUApp.launch(this.cordova.getActivity());
     IUApp.init(this.cordova.getActivity().getApplication(), HostComplianceActivity.class);
+    TimeUnit.SECONDS.sleep(1);
+    IUApp.launch(this.cordova.getActivity());
     
   }
 
