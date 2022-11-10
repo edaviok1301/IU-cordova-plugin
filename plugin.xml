@@ -49,7 +49,7 @@
 	    <resource-file src="src/android/libs/amlibrary-prod-release.aar"
 	        target="libs/amlibrary-prod-release.aar" />
         <resource-file src="src/android/activity_host_compliance.xml" target="res/layout/activity_host_compliance.xml" />
-        <resource-file src="src/android/atomentellogo.xml" target="res/drawableatomentellogo.xml"/>
+        <resource-file src="src/android/atomentellogo.xml" target="res/drawable/atomentellogo.xml"/>
         <resource-file src="src/android/color.xml" target="res/values/color.xml"/>
 
 	    <source-file src="src/android/com/iu/amlibrary/amlibrary.java"
