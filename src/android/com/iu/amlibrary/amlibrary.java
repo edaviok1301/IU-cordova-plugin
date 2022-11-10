@@ -26,12 +26,15 @@ public class amlibrary extends CordovaPlugin {
   private static final String ADDITIONAL_DATA = "ADDITIONAL_DATA";
 
   @Override
-  protected void pluginInitialize() throws InterruptedException {
+  protected void pluginInitialize() {
     Log.d("AMLib", "Plugin Init launch");
-    IUApp.init(this.cordova.getActivity().getApplication(), HostComplianceActivity.class);
-    TimeUnit.SECONDS.sleep(1);
     IUApp.launch(this.cordova.getActivity());
-    
+    try{
+      TimeUnit.SECONDS.sleep(1);
+    }catch (InterruptedException ex){
+      Log.e("Error sleep",ex.getMessage());
+    }
+    IUApp.init(this.cordova.getActivity().getApplication(), HostComplianceActivity.class);
   }
 
   public amlibrary() {
