@@ -21,3 +21,4 @@
 -keep class amazonia.iu.com.amlibrary.vas.VasResponse {*;}
 -keep class amazonia.iu.com.amlibrary.client.IUApp {*;}
 -keep class amazonia.iu.com.amlibrary.activities.fragment.VideoPlayerFragment{*;}
+-keep class amazonia.iu.com.idmanager.dto.** { *; }
