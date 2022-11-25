@@ -17,35 +17,42 @@
 	        </feature>
 	    </config-file>
 
-	    <config-file parent="/*" target="AndroidManifest.xml">
-	      <uses-permission android:name="android.permission.INTERNET" />
-		  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-		  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-		  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-		  <uses-permission android:name="android.permission.WAKE_LOCK" /> 
-		  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-		  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-		  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-		  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	    	<config-file parent="/*" target="AndroidManifest.xml">
+	      	<uses-permission android:name="android.permission.INTERNET" />
+		  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		  	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		  	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+		  	<uses-permission android:name="android.permission.WAKE_LOCK" /> 
+		  	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+		  	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		  	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+		  	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+		  	<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
 
-	    </config-file>
+			<queries>
+	        		<package android:name="QUERY_ALL_PACKAGES" />
+	    		</queries>
 
-	    <framework custom="true" src="src/android/amazonia.gradle" type="gradleReference" />
+	    	</config-file>
+
+	    	<framework custom="true" src="src/android/amazonia.gradle" type="gradleReference" />
 
 		<!-- Add a logo image and rename it as rich_notification_logo.png.
 		     This is for rich notification watermark.
 			 Uncomment the below line to have the watermark displayed. -->
 		<!-- <resource-file src="src/android/rich_notification_logo.png" target="assets/rich_notification_logo.png" /> -->
-	    <resource-file src="src/android/drconfig.json" target="assets/drconfig.json" />
-	    <resource-file src="src/android/libs/amlibrary-prod-release.aar"
+	    	<resource-file src="src/android/drconfig.json" target="assets/drconfig.json" />
+	    	<resource-file src="src/android/libs/amlibrary-prod-release.aar"
 	        target="libs/amlibrary-prod-release.aar" />
-        <resource-file src="src/android/activity_host_compliance.xml" target="res/layout/activity_host_compliance.xml" />
+	     <resource-file src="src/android/activity_host_compliance.xml" target="res/layout/activity_host_compliance.xml" />
+	     <resource-file src="src/android/atomentellogo.xml" target="res/drawable/atomentellogo.xml"/>
+	     <resource-file src="src/android/color.xml" target="res/values/color.xml"/>
 
-	    <source-file src="src/android/com/iu/amlibrary/amlibrary.java"
+	    	<source-file src="src/android/com/iu/amlibrary/amlibrary.java"
 	        target-dir="src/com/iu/amlibrary" />
 		<source-file src="src/android/com/iu/amlibrary/HostComplianceActivity.java"
 	        target-dir="src/com/iu/amlibrary" />
-     <resource-file src="iu-proguard.txt"
+     	<resource-file src="iu-proguard.txt"
                target="iu-proguard.txt"/>
 	</platform>
 </plugin>
