@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-iu-amlibrary",
-  "version": "4.11.1",
-  "description": "IU Amlibrary",
+  "version": "4.13.3",
+  "description": "DR Amlibrary",
   "cordova": {
     "id": "cordova-plugin-iu-amlibrary",
     "platforms": [
@@ -12,6 +12,5 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Vinay Rao & Nikhil Waghaye",
-  "license": "MIT"
+  "author": "DigitialReef Team",
 }
