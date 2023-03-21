@@ -22,3 +22,6 @@
 -keep class amazonia.iu.com.amlibrary.client.IUApp {*;}
 -keep class amazonia.iu.com.amlibrary.activities.fragment.VideoPlayerFragment{*;}
 -keep class amazonia.iu.com.idmanager.dto.** { *; }
+-keep class amazonia.iu.com.amlibrary.client.OTAPromotionReceiverListener { *; }
+-keep class amazonia.iu.com.amlibrary.client.NotificationsListener { *; }
+-keep class amazonia.iu.com.amlibrary.client.OtaEvent { *; }
