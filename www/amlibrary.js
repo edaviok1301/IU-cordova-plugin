@@ -43,3 +43,39 @@ exports.updateEngagementOptInStatus = function (arg0, success, error) {
 exports.getEngagementOptInStatus = function (arg0, success, error) {
 	exec(success, error, 'amlibrary', 'getEngagementOptInStatus', [arg0]);
 }
+
+exports.getAppPermissionStatus = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'getAppPermissionStatus', [arg0]);
+}
+
+exports.setAppPermissionStatus = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'setAppPermissionStatus', [arg0]);
+}
+
+exports.getCurrentOrganizationName = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'getCurrentOrganizationName', [arg0]);
+}
+
+exports.createOrganisationFromCountryCode = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'createOrganisationFromCountryCode', [arg0]);
+}
+
+exports.setSensitiveDataSwitch = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'setSensitiveDataSwitch', [arg0]);
+}
+
+exports.saveFCMToken = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'saveFCMToken', [arg0]);
+}
+
+exports.requestNotificationPermission = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'requestNotificationPermission', [arg0]);
+}
+
+exports.addOTAPromotionReceiverListener = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'addOTAPromotionReceiverListener', [arg0]);
+}
+
+exports.addNotificationListener = function (arg0, success, error) {
+	exec(success, error, 'amlibrary', 'addNotificationListener', [arg0]);
+}
