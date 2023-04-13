@@ -15,7 +15,7 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 
-import amazonia.iu.com.MainActivity;
+
 import amazonia.iu.com.amlibrary.client.IUApp;
 import amazonia.iu.com.amlibrary.client.NotificationsListener;
 import amazonia.iu.com.amlibrary.client.OTAPromotionReceiverListener;
